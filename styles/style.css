@@ -259,6 +259,7 @@ main {
   margin-bottom: 60px;
 }
 
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
