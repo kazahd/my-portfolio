@@ -32,28 +32,34 @@
       <div class="container">
         <section id="home">
           <div class="hero">
-            <div class="hero-image">
-    <picture>
-        <!-- Современные форматы -->
-        <source type="image/webp" srcset="./images/profile.webp">
-        <!-- Запасной JPEG -->
-        <img class="hero-image-placeholder" 
-             src="./images/profile.jpg" 
-             alt="Фото Тихона Семенова"
-             width="300" height="300"
-             loading="eager"
-             decoding="async">
-    </picture>
+    <div class="hero-image">
+        <picture>
+            <!-- Современный формат WebP -->
+            <source 
+                type="image/webp" 
+                srcset="./images/profile.webp"
+                width="300" 
+                height="300">
+            <!-- Запасной JPEG -->
+            <img 
+                class="hero-photo"
+                src="./images/profile.jpg" 
+                alt="Портрет Тихона Семенова"
+                width="300" 
+                height="300"
+                loading="eager"
+                decoding="async">
+        </picture>
+    </div>
+    <div class="hero-text">
+        <h1>Привет! Я студент группы ЭФБО-02-24</h1>
+        <p>
+            Увлекаюсь веб-разработкой и созданием современных интерфейсов. В
+            настоящее время изучаю HTML, CSS, JavaScript и React.
+        </p>
+        <a href="./assets/resume.pdf" class="btn">Скачать резюме</a>
+    </div>
 </div>
-            <div class="hero-text">
-              <h1>Привет! Я студент группы ЭФБО-02-24</h1>
-              <p>
-                Увлекаюсь веб-разработкой и созданием современных интерфейсов. В
-                настоящее время изучаю HTML, CSS, JavaScript и React.
-              </p>
-              <a href="./assets/resume.pdf" class="btn">Скачать резюме</a>
-            </div>
-          </div>
 
           <div class="skills-section">
             <h2>Мои навыки</h2>
