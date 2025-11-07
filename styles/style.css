@@ -148,35 +148,34 @@ footer {
 }
 
 /* Стили для главной страницы */
+/* Герой-секция */
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px;
 }
 
 .hero-text {
-  flex: 1;
+    flex: 1;
 }
 
 .hero-image {
-  flex: 1;
-  text-align: center;
+    flex: 1;
+    text-align: center;
 }
 
-.hero-image-placeholder {
-  width: 300px;
-  height: 300px;
-  background-color: #e8f5e9;
-  border-radius: 10px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #388e3c;
-  border: 2px dashed #4caf50;
+.hero-photo {
+    inline-size: 300px;
+    block-size: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    display: block;
+    margin: 0 auto;
 }
+
 
 h1 {
     font-size: clamp(1.8rem, 4vw, 2.5rem);
