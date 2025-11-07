@@ -35,17 +35,20 @@
           <div class="contact-form">
             <form id="contactForm">
               <div class="form-group">
-                <label for="name">Имя:</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Введите ваше имя"
-                />
-                <div class="error-message" id="nameError">
-                  Пожалуйста, введите ваше имя
-                </div>
-              </div>
+    <label for="name" class="visually-hidden">Имя:</label>
+    <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Введите ваше имя"
+        aria-required="true"
+        aria-describedby="name-hint"
+    />
+    <div class="visually-hidden" id="name-hint">Пожалуйста, введите ваше настоящее имя</div>
+    <div class="error-message" id="nameError">
+        Пожалуйста, введите ваше имя
+    </div>
+</div>
 
               <div class="form-group">
                 <label for="email">Email:</label>
