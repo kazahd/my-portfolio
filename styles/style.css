@@ -1141,3 +1141,29 @@ a, button, input, textarea {
         justify-content: center;
     }
 }
+
+/* Контейнерные запросы для проектов */
+@supports (container-type: inline-size) {
+    .projects-section {
+        container-type: inline-size;
+        container-name: projects;
+    }
+    
+    @container projects (min-width: 600px) {
+        .projects-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @container projects (min-width: 900px) {
+        .projects-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    
+    @container projects (min-width: 1200px) {
+        .projects-grid {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
