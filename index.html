@@ -33,24 +33,19 @@
         <section id="home">
           <div class="hero">
     <div class="hero-image">
-        <picture>
-            <!-- Современный формат WebP -->
-            <source 
-                type="image/webp" 
-                srcset="./images/profile.webp"
-                width="300" 
-                height="300">
-            <!-- Запасной JPEG -->
-            <img 
-                class="hero-photo"
-                src="./images/profile.jpg" 
-                alt="Портрет Тихона Семенова"
-                width="300" 
-                height="300"
-                loading="eager"
-                decoding="async">
-        </picture>
-    </div>
+    <picture>
+        <source type="image/webp" 
+                srcset="./images/profile-150.webp 150w, ./images/profile-300.webp 300w"
+                sizes="300px">
+        <img class="hero-photo"
+             src="./images/profile-200.jpg" 
+             srcset="./images/profile-150.jpg 150w, ./images/profile-300.jpg 300w"
+             sizes="300px"
+             width="300" height="300"
+             alt="Портрет Тихона Семенова"
+             fetchpriority="high">
+    </picture>
+</div>
     <div class="hero-text">
         <h1>Привет! Я студент группы ЭФБО-02-24</h1>
         <p>
