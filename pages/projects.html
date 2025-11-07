@@ -45,52 +45,70 @@
         <div class="projects-grid">
           <div class="project-card" data-category="html" data-project="4">
     <picture>
-        <source type="image/webp" srcset="../images/personal website.webp">
+        <!-- WebP версия -->
+        <source type="image/webp" 
+                srcset="../images/personal website.jpg 1x"
+                sizes="(max-width: 768px) 300px, 600px">
+        <!-- Основное JPEG изображение -->
         <img src="../images/personal website.jpg" 
-             alt="Личный сайт"
+             srcset="../images/personal website.jpg 1x"
+             sizes="(max-width: 768px) 300px, 600px"
              width="300" height="200"
              loading="lazy"
-             decoding="async">
+             decoding="async"
+             alt="Личный сайт">
     </picture>
     <h3>Личный сайт</h3>
     <p>HTML, CSS</p>
 </div>
           <div class="project-card" data-category="js" data-project="5">
-            <img class="modal-screenshot" 
-     src="../images/to-do.jpg" 
-     srcset="../images/to-do.jpg 1x"
-     sizes="(max-width: 768px) 300px, 600px"
-     width="300" 
-     height="200"
-     loading="lazy"
-     alt="Todo-приложение">
-            <h3>Todo-приложение</h3>
-            <p>JavaScript</p>
-          </div>
+    <picture>
+        <source type="image/webp" 
+                srcset="../images/to-do.jpg 1x"
+                sizes="(max-width: 768px) 300px, 600px">
+        <img src="../images/to-do.jpg" 
+             srcset="../images/to-do.jpg 1x"
+             sizes="(max-width: 768px) 300px, 600px"
+             width="300" height="200"
+             loading="lazy"
+             decoding="async"
+             alt="Todo-приложение">
+    </picture>
+    <h3>Todo-приложение</h3>
+    <p>JavaScript</p>
+</div>
           <div class="project-card" data-category="react" data-project="6">
-            <img class="modal-screenshot" 
-     src="../images/shop.bmp" 
-     srcset="../images/shop.bmp 1x"
-     sizes="(max-width: 768px) 300px, 600px"
-     width="300" 
-     height="200"
-     loading="lazy"
-     alt="Интернет-магазин">
-            <h3>Интернет-магазин</h3>
-            <p>React</p>
-          </div>
+    <picture>
+        <source type="image/webp" 
+                srcset="../images/shop.bmp 1x"
+                sizes="(max-width: 768px) 300px, 600px">
+        <img src="../images/shop.bmp" 
+             srcset="../images/shop.bmp 1x"
+             sizes="(max-width: 768px) 300px, 600px"
+             width="300" height="200"
+             loading="lazy"
+             decoding="async"
+             alt="Интернет-магазин">
+    </picture>
+    <h3>Интернет-магазин</h3>
+    <p>React</p>
+</div>
           <div class="project-card" data-category="html" data-project="7">
-            <img class="modal-screenshot" 
-     src="../images/portfolio.jpg" 
-     srcset="../images/portfolio.jpg 1x"
-     sizes="(max-width: 768px) 300px, 600px"
-     width="300" 
-     height="200"
-     loading="lazy"
-     alt="Портфолио">
-            <h3>Портфолио</h3>
-            <p>Bootstrap</p>
-          </div>
+    <picture>
+        <source type="image/webp" 
+                srcset="../images/portfolio.jpg 1x"
+                sizes="(max-width: 768px) 300px, 600px">
+        <img src="../images/portfolio.jpg" 
+             srcset="../images/portfolio.jpg 1x"
+             sizes="(max-width: 768px) 300px, 600px"
+             width="300" height="200"
+             loading="lazy"
+             decoding="async"
+             alt="Портфолио">
+    </picture>
+    <h3>Портфолио</h3>
+    <p>Bootstrap</p>
+</div>
         </div>
          </div>
     </section>

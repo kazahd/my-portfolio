@@ -1109,28 +1109,29 @@ a, button, input, textarea {
     }
 }
 
-/* Контейнерные запросы для проектов */
+/* Базовое поведение */
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* Контейнерные запросы ТОЧНО ПО ТЗ */
 @supports (container-type: inline-size) {
-    .projects-area {  /* ← Теперь контейнером стала внешняя обертка */
+    .projects-area {
         container-type: inline-size;
         container-name: projects;
     }
     
-    @container projects (min-width: 600px) {
-        .projects-grid {
-            grid-template-columns: repeat(2, 1fr);
+    @container projects (min-width: 640px) {
+        .projects-grid { 
+            grid-template-columns: repeat(2, 1fr); 
         }
     }
     
-    @container projects (min-width: 900px) {
-        .projects-grid {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }
-    
-    @container projects (min-width: 1200px) {
-        .projects-grid {
-            grid-template-columns: repeat(4, 1fr);
+    @container projects (min-width: 960px) {
+        .projects-grid { 
+            grid-template-columns: repeat(3, 1fr); 
         }
     }
 }
