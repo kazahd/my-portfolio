@@ -88,9 +88,22 @@ header {
 
 /* Навигация в шапке */
 .header-nav {
-  background-color: #1b5e20;
-  padding: 15px 0;
-  border-radius: 8px;
+    background-color: #1b5e20;
+    padding: 15px 0;
+    margin-top: 20px;
+    border-radius: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+    /* Безопасные области для вырезов */
+    padding-block-start: calc(.75rem + env(safe-area-inset-top));
+    padding-block-end: .75rem;
+    padding-inline-start: calc(1rem + env(safe-area-inset-left));
+    padding-inline-end: calc(1rem + env(safe-area-inset-right));
+    
+    isolation: isolate;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header-nav ul {
