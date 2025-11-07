@@ -1,4 +1,20 @@
 /* styles.css */
+/* Современные единицы высоты для мобильных устройств */
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    min-height: 100vh; /* фолбэк для старых браузеров */
+    min-height: 100svh; /* стабильный минимум */
+    min-height: 100dvh; /* актуальная видимая высота */
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
 /* Общие стили */
 * {
   margin: 0;
