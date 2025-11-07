@@ -42,14 +42,17 @@
 
         <div class="projects-grid">
           <div class="project-card" data-category="html" data-project="4">
-            <img
-              class="modal-screenshot"
-              src="../images/personal website.jpg"
-              alt="Личный сайт"
-            />
-            <h3>Личный сайт</h3>
-            <p>HTML, CSS</p>
-          </div>
+    <picture>
+        <source type="image/webp" srcset="../images/personal website.webp">
+        <img src="../images/personal website.jpg" 
+             alt="Личный сайт"
+             width="300" height="200"
+             loading="lazy"
+             decoding="async">
+    </picture>
+    <h3>Личный сайт</h3>
+    <p>HTML, CSS</p>
+</div>
           <div class="project-card" data-category="js" data-project="5">
             <img
               class="modal-screenshot"
