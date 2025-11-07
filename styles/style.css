@@ -1154,7 +1154,7 @@ a, button, input, textarea {
 
 /* Контейнерные запросы для проектов */
 @supports (container-type: inline-size) {
-    .projects-section {
+    .projects-area {  /* ← Теперь контейнером стала внешняя обертка */
         container-type: inline-size;
         container-name: projects;
     }
