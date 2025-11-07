@@ -139,11 +139,12 @@ main {
 
 /* Подвал */
 footer {
-  background-color: #2e7d32;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    padding-bottom: calc(20px + env(safe-area-inset-bottom));
 }
 
 /* Стили для главной страницы */
