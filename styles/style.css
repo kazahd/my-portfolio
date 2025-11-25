@@ -2200,3 +2200,131 @@ a {
   .contact-info h2 {
     color: #000000 !important;
   }
+
+  /* ===== КРИТИЧЕСКОЕ ИСПРАВЛЕНИЕ КОНТРАСТА НАВИГАЦИИ ===== */
+
+/* 1. Делаем фон навигации значительно темнее */
+.header-nav {
+    background-color: #0d4010 !important; /* Очень темный зеленый */
+    padding: 15px 0;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* 2. Убедимся что все ссылки белые и жирные */
+.header-nav a {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: 600 !important; /* Жирный шрифт */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+}
+
+/* 3. Активная ссылка - делаем более контрастной */
+.header-nav a.active {
+    background-color: #ffffff !important;
+    color: #0d4010 !important; /* Темный текст на белом фоне */
+    border: 2px solid #ffffff;
+    font-weight: 700 !important;
+}
+
+/* 4. Ховер состояния */
+.header-nav a:hover,
+.header-nav a:focus {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+    color: #ffffff !important;
+    border: 2px solid #ffffff;
+    transform: translateY(-2px);
+}
+
+/* 5. Улучшаем контраст для логотипа в хедере */
+.header-content .logo h2 {
+    color: #0d4010 !important; /* Темный зеленый вместо белого */
+    font-weight: 700;
+    text-shadow: none;
+}
+
+/* 6. Делаем хедер немного темнее для лучшего контраста */
+header {
+    background-color: #1b5e20 !important; /* Темнее чем было */
+    color: #ffffff;
+}
+
+/* 7. Улучшаем контраст кнопки "Скачать резюме" */
+.hero .btn {
+    background-color: #0d4010 !important;
+    color: #ffffff !important;
+    border: 2px solid #0d4010;
+    font-weight: 600;
+}
+
+.hero .btn:hover {
+    background-color: #1b5e20 !important;
+    border-color: #1b5e20;
+}
+
+/* 8. Улучшаем контраст для всех кнопок на сайте */
+.btn {
+    background-color: #0d4010 !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    border: 2px solid #0d4010;
+}
+
+.btn:hover {
+    background-color: #1b5e20 !important;
+    border-color: #1b5e20;
+}
+
+/* 9. Улучшаем контраст в футере */
+footer {
+    background-color: #0d4010 !important; /* Такой же темный как навигация */
+    color: #ffffff;
+}
+
+/* 10. Улучшаем социальные иконки */
+.social-link {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.social-link:hover {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    border-color: #ffffff;
+}
+
+/* 11. Улучшаем контраст для текста в футере */
+.footer-info p {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+/* 12. Убедимся что все тексты достаточно контрастные */
+body {
+    color: #333333 !important;
+    background-color: #ffffff !important;
+}
+
+/* 13. Улучшаем заголовки */
+h1, h2, h3 {
+    color: #0d4010 !important; /* Темный зеленый для заголовков */
+    font-weight: 700;
+}
+
+/* 14. Улучшаем навигационные подсказки для скринридеров */
+.skip-link {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border: 2px solid #ffffff;
+    font-weight: 600;
+}
+
+/* 15. Улучшаем логотип */
+.logo-circle {
+    background-color: #0d4010 !important;
+    color: #ffffff !important;
+    font-weight: bold;
+}
