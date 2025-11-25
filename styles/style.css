@@ -1923,3 +1923,280 @@ a:focus-visible {
   outline: 3px solid #0066cc;
   outline-offset: 3px;
 }
+
+/* ===== КРИТИЧЕСКИЕ ИСПРАВЛЕНИЯ КОНТРАСТА ДЛЯ LIGHTHOUSE ===== */
+
+/* 1. Исправляем все возможные проблемные места */
+
+/* Навигация - делаем темнее */
+.header-nav {
+  background-color: #1b5e20; /* Темно-зеленый */
+}
+
+.header-nav a {
+  color: #ffffff !important; /* Белый текст */
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.header-nav a:hover,
+.header-nav a:focus {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  color: #ffffff !important;
+}
+
+/* Кнопки - темно-зеленые */
+.btn {
+  background-color: #1b5e20 !important; /* Темный зеленый */
+  color: #ffffff !important; /* Белый текст */
+  border: 2px solid #1b5e20 !important;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #2e7d32 !important;
+  color: #ffffff !important;
+}
+
+/* Заголовки - почти черные */
+h1, h2, h3, h4, h5, h6 {
+  color: #1a1a1a !important; /* Почти черный */
+}
+
+.page-title {
+  color: #1a1a1a !important;
+}
+
+/* Текст в формах - темный */
+.contact-form .form-group label {
+  color: #1a1a1a !important; /* Темный вместо зеленого */
+  font-weight: 700; /* Жирнее */
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  color: #1a1a1a !important;
+  background-color: #ffffff !important;
+}
+
+.contact-form .form-group input::placeholder,
+.contact-form .form-group textarea::placeholder {
+  color: #666666 !important; /* Достаточно темный */
+}
+
+/* Подсказки полей */
+.field-hint {
+  color: #555555 !important;
+  background-color: #f5f5f5;
+  border-left: 4px solid #757575;
+}
+
+/* Сообщения об ошибках - темнее */
+.error-message {
+  color: #8b0000 !important; /* Темно-красный */
+  background-color: #ffeaea;
+  border-left: 4px solid #8b0000;
+  font-weight: 600;
+}
+
+/* Успешные сообщения */
+.success-message {
+  color: #006400 !important; /* Темно-зеленый */
+  background-color: #f0fff0;
+  border: 2px solid #006400;
+}
+
+/* Социальные иконки в футере */
+.social-link {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+}
+
+.social-link:hover {
+  background-color: rgba(255, 255, 255, 0.4) !important;
+  color: #ffffff !important;
+}
+
+/* 2. Принудительно исправляем все текстовые элементы */
+
+/* Основной текст */
+body {
+  color: #333333 !important;
+  background-color: #ffffff !important;
+}
+
+/* Карточки проектов */
+.project-card {
+  background-color: #ffffff !important;
+  color: #333333 !important;
+}
+
+.project-card h3 {
+  color: #1a1a1a !important;
+}
+
+.project-card p {
+  color: #555555 !important;
+}
+
+/* Навыки */
+.skill-name span {
+  color: #333333 !important;
+  font-weight: 600;
+}
+
+/* Прогресс в дневнике */
+.progress-text {
+  color: #333333 !important;
+}
+
+.progress-date {
+  color: #1a1a1a !important;
+  font-weight: 600;
+}
+
+/* 3. Убираем все светлые цвета которые могут вызывать проблемы */
+
+/* Убираем светлые зеленые */
+.header-nav a.active {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  color: #ffffff !important;
+}
+
+/* Информационные блоки */
+.contact-info {
+  background-color: #ffffff !important;
+  color: #333333 !important;
+  border: 2px solid #e0e0e0;
+}
+
+.contact-list li {
+  color: #333333 !important;
+}
+
+/* 4. Улучшаем видимость фокуса */
+*:focus {
+  outline: 3px solid #0066cc !important;
+  outline-offset: 2px !important;
+}
+
+/* 5. Принудительные исправления для максимального контраста */
+
+/* Делаем ВСЕ тексты темными */
+p, span, div, li, td, th {
+  color: #333333 !important;
+}
+
+/* Заголовки еще темнее */
+h1, h2, h3 {
+  color: #000000 !important;
+}
+
+/* Ссылки - темно-синие */
+a {
+  color: #0000ee !important; /* Стандартный синий ссылок */
+}
+
+a:hover {
+  color: #0000cc !important;
+}
+
+/* 6. Исправляем специфичные элементы которые могут быть проблемными */
+
+/* Логотип */
+.logo h2 {
+  color: #ffffff !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Футер */
+footer {
+  background-color: #1b5e20 !important;
+  color: #ffffff !important;
+}
+
+footer p {
+  color: #ffffff !important;
+}
+
+/* Кнопка пропуска */
+.skip-link {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 2px solid #ffffff;
+}
+
+/* 7. Убедимся что нет полупрозрачных текстов */
+* {
+  opacity: 1 !important;
+}
+
+/* 8. Исправляем контраст для состояний */
+.status-completed {
+  background-color: #e8f5e9;
+  color: #1a1a1a !important; /* Темный текст */
+  border: 2px solid #4caf50;
+}
+
+.status-in-progress {
+  background-color: #fff3e0;
+  color: #1a1a1a !important;
+  border: 2px solid #ff9800;
+}
+
+.status-planned {
+  background-color: #e3f2fd;
+  color: #1a1a1a !important;
+  border: 2px solid #2196f3;
+}
+
+/* 9. Принудительное исправление всех текстовых цветов */
+.hero-text h1 {
+  color: #1a1a1a !important;
+}
+
+.hero-text p {
+  color: #333333 !important;
+}
+
+.skills-section h2 {
+  color: #1a1a1a !important;
+}
+
+.projects-section h2 {
+  color: #1a1a1a !important;
+}
+
+/* 10. Финальное принудительное исправление */
+body * {
+  color: #333333 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000000 !important;
+}
+
+a {
+  color: #0000ee !important;
+}
+
+.btn, .header-nav a, footer {
+  color: #ffffff !important;
+}
+
+  /* Экстренные исправления контраста */
+  .contact-form .form-group label {
+    color: #000000 !important;
+    font-weight: bold;
+  }
+  
+  .contact-form .form-group input::placeholder {
+    color: #666666 !important;
+  }
+  
+  .field-hint {
+    color: #555555 !important;
+  }
+  
+  .contact-info h2 {
+    color: #000000 !important;
+  }
