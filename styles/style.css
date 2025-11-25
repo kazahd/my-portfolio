@@ -2522,3 +2522,8 @@ header {
 body > header > div > div > div > h2 {
     color: #ffffff !important;
 }
+
+/* ===== ИСПРАВЛЕНИЕ ЦВЕТА ИМЕНИ В ХЕДЕРЕ ===== */
+.header-content .logo h2 {
+    color: #ffffff !important;
+}
