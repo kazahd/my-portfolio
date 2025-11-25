@@ -1660,3 +1660,266 @@ a:focus {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ===== ИСПРАВЛЕНИЯ КОНТРАСТА ДЛЯ LIGHTHOUSE ===== */
+
+/* 1. Улучшенные цвета для навигации */
+header {
+  background-color: #1b5e20; /* Более темный зеленый для лучшего контраста */
+  color: white;
+}
+
+.header-nav a {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.header-nav a:hover,
+.header-nav a:focus,
+.header-nav a.active {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+/* 2. Улучшенные цвета кнопок */
+.btn {
+  background-color: #1b5e20; /* Более темный зеленый */
+  color: #ffffff;
+  border: 2px solid transparent;
+}
+
+.btn:hover {
+  background-color: #2e7d32;
+  color: #ffffff;
+}
+
+.btn:focus {
+  background-color: #1b5e20;
+  color: #ffffff;
+  outline: 3px solid #0066cc;
+  outline-offset: 2px;
+}
+
+/* 3. Улучшенные цвета текста */
+.contact-form .form-group label {
+  color: #1b5e20; /* Более темный зеленый */
+  font-weight: 600;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  color: #333333; /* Темно-серый вместо черного */
+  border: 2px solid #ddd;
+  background-color: #ffffff;
+}
+
+.contact-form .form-group input::placeholder,
+.contact-form .form-group textarea::placeholder {
+  color: #666666; /* Достаточный контраст для placeholder */
+  opacity: 1; /* Убедимся, что непрозрачность 100% */
+}
+
+/* 4. Улучшенные цвета ошибок */
+.error-message {
+  color: #b71c1c; /* Более темный красный */
+  background-color: #ffebee;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border-left: 4px solid #b71c1c;
+}
+
+.form-group.error input,
+.form-group.error textarea {
+  border-color: #b71c1c;
+  background-color: #ffebee;
+}
+
+/* 5. Улучшенные цвета подсказок */
+.field-hint {
+  color: #555555; /* Темнее для лучшего контраста */
+  background-color: #f8f9fa;
+  padding: 6px 10px;
+  border-radius: 4px;
+  border-left: 3px solid #78909c;
+}
+
+/* 6. Улучшенные цвета успешных сообщений */
+.success-message {
+  background-color: #e8f5e9;
+  color: #1b5e20; /* Более темный зеленый */
+  border: 2px solid #c8e6c9;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.success-icon {
+  color: #1b5e20;
+  font-weight: bold;
+}
+
+/* 7. Улучшенные цвета для контактной информации */
+.contact-info {
+  background-color: #ffffff;
+  color: #333333;
+  border: 2px solid #e8f5e9;
+}
+
+.contact-list li {
+  border-bottom: 1px solid #e0e0e0;
+  color: #333333;
+}
+
+.contact-icon {
+  background-color: #e8f5e9;
+  color: #1b5e20; /* Более темный зеленый */
+  font-weight: bold;
+}
+
+/* 8. Улучшенные цвета ссылок */
+.contact-link {
+  color: #1b5e20;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: #0d47a1;
+  background-color: #e3f2fd;
+}
+
+/* 9. Улучшенные цвета для футера */
+footer {
+  background-color: #1b5e20;
+  color: #ffffff;
+}
+
+.social-link {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+.social-link:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+/* 10. Улучшенные контрасты для заголовков */
+h1, h2, h3, h4, h5, h6 {
+  color: #1b5e20;
+}
+
+.page-title {
+  color: #1b5e20;
+}
+
+/* 11. Улучшенные индикаторы обязательных полей */
+.required-indicator {
+  color: #b71c1c; /* Яркий красный для лучшей видимости */
+  font-weight: bold;
+}
+
+/* 12. Улучшенные стили для полей в фокусе */
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus {
+  border-color: #1b5e20;
+  box-shadow: 0 0 0 3px rgba(27, 94, 32, 0.2);
+  background-color: #ffffff;
+}
+
+/* 13. Проверка контраста для текста на цветном фоне */
+.logo h2 {
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* 14. Улучшенные контрасты для состояний */
+.status-completed {
+  background-color: #e8f5e9;
+  color: #1b5e20;
+  border: 1px solid #c8e6c9;
+}
+
+.status-in-progress {
+  background-color: #fff3e0;
+  color: #e65100;
+  border: 1px solid #ffcc80;
+}
+
+.status-planned {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+  border: 1px solid #90caf9;
+}
+
+/* 15. Убедимся, что все тексты имеют минимальный контраст 4.5:1 */
+body {
+  color: #333333;
+  background-color: #f8f9fa;
+}
+
+/* 16. Улучшенные контрасты для проектных карточек */
+.project-card {
+  background-color: #ffffff;
+  color: #333333;
+  border: 2px solid #e8f5e9;
+}
+
+.project-card h3 {
+  color: #1b5e20;
+}
+
+.project-card p {
+  color: #555555;
+}
+
+/* 17. Улучшенные контрасты для навыков */
+.skills-section h2 {
+  color: #1b5e20;
+}
+
+.skill-name span {
+  color: #333333;
+}
+
+.skill-bar {
+  background-color: #e0e0e0;
+}
+
+.skill-level {
+  background-color: #1b5e20;
+}
+
+/* 18. Адаптивность для высокого контраста */
+@media (prefers-contrast: high) {
+  .btn {
+    border: 3px solid currentColor;
+  }
+  
+  .contact-form .form-group input,
+  .contact-form .form-group textarea {
+    border: 3px solid #333;
+  }
+  
+  .header-nav a {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* 19. Улучшенные тени для лучшего восприятия */
+.contact-form,
+.contact-info,
+.project-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 20. Убедимся, что все интерактивные элементы видны в фокусе */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+a:focus-visible {
+  outline: 3px solid #0066cc;
+  outline-offset: 3px;
+}
