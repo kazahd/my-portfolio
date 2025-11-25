@@ -1325,3 +1325,338 @@ a, button, input, textarea {
     }
 }
 
+/* Дополнительные стили для доступности форм */
+.required-indicator {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.field-hint {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+.contact-link {
+  color: #2e7d32;
+  text-decoration: none;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  text-decoration: underline;
+}
+
+/* Улучшенные стили фокуса для доступности */
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: 3px solid #0066cc;
+  outline-offset: 2px;
+}
+
+/* Улучшенные контрасты */
+.contact-info,
+.contact-form {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Скрытие для скринридеров */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Исправления для формы контактов */
+.contact-form .form-group {
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative; /* Для правильного позиционирования подсказок */
+}
+
+.contact-form .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #2e7d32;
+  text-align: left;
+  width: 100%;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  box-sizing: border-box; /* Важно! чтобы padding не увеличивал ширину */
+}
+
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.contact-form .form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Стили для подсказок полей */
+.field-hint {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 4px;
+  display: block;
+  width: 100%;
+  word-wrap: break-word;
+  line-height: 1.4;
+}
+
+/* Стили для индикатора обязательного поля */
+.required-indicator {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+/* Стили для сообщений об ошибках */
+.error-message {
+  color: #d32f2f;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  display: none;
+  text-align: left;
+  width: 100%;
+  word-wrap: break-word;
+  line-height: 1.4;
+}
+
+.form-group.error input,
+.form-group.error textarea {
+  border-color: #d32f2f;
+}
+
+.form-group.error .error-message {
+  display: block;
+}
+
+/* Убедимся, что контейнер формы имеет правильные отступы */
+.contact-form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #4caf50;
+  width: 100%;
+  box-sizing: border-box; /* Важно! */
+}
+
+/* Улучшенные стили для контейнера контактов */
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 20px;
+  }
+  
+  .contacts-container {
+    gap: 30px;
+  }
+  
+  .contact-form .form-group input,
+  .contact-form .form-group textarea {
+    padding: 10px;
+  }
+}
+
+/* Улучшенные стили фокуса для доступности */
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: 3px solid #0066cc;
+  outline-offset: 2px;
+}
+
+/* Ссылки в контактах */
+.contact-link {
+  color: #2e7d32;
+  text-decoration: none;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Скрытие для скринридеров */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* ===== ДОПОЛНИТЕЛЬНЫЕ СТИЛИ ДЛЯ ДОСТУПНОСТИ ===== */
+
+/* Заголовок страницы */
+.page-title {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+}
+
+/* Улучшенные стили для успешного сообщения */
+.success-message {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: none;
+  text-align: left;
+  width: 100%;
+  border: 1px solid #c8e6c9;
+}
+
+.success-icon {
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+/* Улучшенные стили фокуса для всех интерактивных элементов */
+button:focus,
+input:focus,
+textarea:focus,
+select:focus,
+a:focus {
+  outline: 3px solid #0066cc;
+  outline-offset: 2px;
+}
+
+/* Улучшенные контрасты */
+.contact-info,
+.contact-form {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Ссылки в контактах */
+.contact-link {
+  color: #2e7d32;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  text-decoration: none;
+  border-bottom-color: #2e7d32;
+}
+
+/* Роли для списков */
+[role="list"] {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Улучшенные стили для навигации */
+[role="menubar"] {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+[role="menuitem"] {
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+}
+
+[role="menuitem"]:hover,
+[role="menuitem"]:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Скрытие для скринридеров */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Улучшенные стили для мобильных */
+@media (max-width: 768px) {
+  [role="menubar"] {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .page-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* Высокий контраст для пользователей с ослабленным зрением */
+@media (prefers-contrast: high) {
+  .btn {
+    border: 2px solid currentColor;
+  }
+  
+  .contact-form,
+  .contact-info {
+    border: 2px solid #333;
+  }
+}
+
+/* Уважение к настройкам движения */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
