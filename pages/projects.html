@@ -45,13 +45,23 @@
         <div class="projects-grid">
           <div class="project-card" data-category="html" data-project="4">
     <picture>
+        <!-- AVIF версии -->
+        <source type="image/avif" 
+                srcset="../images/personal website-300.avif 300w,
+                        ../images/personal website-600.avif 600w,
+                        ../images/personal website-900.avif 900w"
+                sizes="(max-width: 768px) 300px, 600px">
         <!-- WebP версия -->
         <source type="image/webp" 
-                srcset="../images/personal website.jpg 1x"
+                srcset="../images/personal website-300.jpg 300w,
+                        ../images/personal website-600.jpg 600w,
+                        ../images/personal website-900.jpg 900w"
                 sizes="(max-width: 768px) 300px, 600px">
         <!-- Основное JPEG изображение -->
-        <img src="../images/personal website.jpg" 
-             srcset="../images/personal website.jpg 1x"
+        <img src="../images/personal website-300.jpg" 
+             srcset="../images/personal website-300.jpg 300w,
+                     ../images/personal website-600.jpg 600w,
+                     ../images/personal website-900.jpg 900w"
              sizes="(max-width: 768px) 300px, 600px"
              width="300" height="200"
              loading="lazy"
@@ -63,11 +73,20 @@
 </div>
           <div class="project-card" data-category="js" data-project="5">
     <picture>
-        <source type="image/webp" 
-                srcset="../images/to-do.jpg 1x"
+        <source type="image/avif" 
+                srcset="../images/to-do-300.avif 300w,
+                        ../images/to-do-600.avif 600w,
+                        ../images/to-do-900.avif 900w"
                 sizes="(max-width: 768px) 300px, 600px">
-        <img src="../images/to-do.jpg" 
-             srcset="../images/to-do.jpg 1x"
+        <source type="image/webp" 
+                srcset="../images/to-do-300.jpg 300w,
+                        ../images/to-do-600.jpg 600w,
+                        ../images/to-do-900.jpg 900w"
+                sizes="(max-width: 768px) 300px, 600px">
+        <img src="../images/to-do-300.jpg" 
+             srcset="../images/to-do-300.jpg 300w,
+                     ../images/to-do-600.jpg 600w,
+                     ../images/to-do-900.jpg 900w"
              sizes="(max-width: 768px) 300px, 600px"
              width="300" height="200"
              loading="lazy"
@@ -79,11 +98,20 @@
 </div>
           <div class="project-card" data-category="react" data-project="6">
     <picture>
-        <source type="image/webp" 
-                srcset="../images/shop.bmp 1x"
+        <source type="image/avif" 
+                srcset="../images/shop-300.avif 300w,
+                        ../images/shop-600.avif 600w,
+                        ../images/shop-900.avif 900w"
                 sizes="(max-width: 768px) 300px, 600px">
-        <img src="../images/shop.bmp" 
-             srcset="../images/shop.bmp 1x"
+        <source type="image/webp" 
+                srcset="../images/shop-300.jpg 300w,
+                        ../images/shop-600.jpg 600w,
+                        ../images/shop-900.jpg 900w"
+                sizes="(max-width: 768px) 300px, 600px">
+        <img src="../images/shop-300.jpg" 
+             srcset="../images/shop-300.jpg 300w,
+                     ../images/shop-600.jpg 600w,
+                     ../images/shop-900.jpg 900w"
              sizes="(max-width: 768px) 300px, 600px"
              width="300" height="200"
              loading="lazy"
@@ -95,11 +123,20 @@
 </div>
           <div class="project-card" data-category="html" data-project="7">
     <picture>
-        <source type="image/webp" 
-                srcset="../images/portfolio.jpg 1x"
+        <source type="image/avif" 
+                srcset="../images/portfolio-300.avif 300w,
+                        ../images/portfolio-600.avif 600w,
+                        ../images/portfolio-900.avif 900w"
                 sizes="(max-width: 768px) 300px, 600px">
-        <img src="../images/portfolio.jpg" 
-             srcset="../images/portfolio.jpg 1x"
+        <source type="image/webp" 
+                srcset="../images/portfolio-300.jpg 300w,
+                        ../images/portfolio-600.jpg 600w,
+                        ../images/portfolio-900.jpg 900w"
+                sizes="(max-width: 768px) 300px, 600px">
+        <img src="../images/portfolio-300.jpg" 
+             srcset="../images/portfolio-300.jpg 300w,
+                     ../images/portfolio-600.jpg 600w,
+                     ../images/portfolio-900.jpg 900w"
              sizes="(max-width: 768px) 300px, 600px"
              width="300" height="200"
              loading="lazy"
@@ -193,7 +230,7 @@
             "https://fitcraft.online/?ybaip=1&yclid=17743515455643975679",
           codeLink:
             "https://fitcraft.online/?ybaip=1&yclid=17743515455643975679",
-          screenshot: "../images/personal website.jpg",
+          screenshot: "../images/personal website-300.jpg",
         },
         5: {
           title: "Todo-приложение",
@@ -202,7 +239,7 @@
             "Интерактивное приложение для управления задачами. Функционал включает добавление, удаление, редактирование и фильтрацию задач. Данные сохраняются в локальном хранилище браузера.",
           liveLink: "https://bordio.com/to-do-list/",
           codeLink: "https://bordio.com/to-do-list/",
-          screenshot: "../images/to-do.jpg",
+          screenshot: "../images/to-do-300.jpg",
         },
         6: {
           title: "Интернет-магазин",
@@ -211,7 +248,7 @@
             "Полнофункциональный интернет-магазин с каталогом товаров, корзиной покупок и системой фильтрации. Использует React Hooks для управления состоянием и React Router для навигации.",
           liveLink: "https://www.apple.com/store",
           codeLink: "https://www.apple.com/store",
-          screenshot: "../images/shop.bmp",
+          screenshot: "../images/shop-300.jpg",
         },
         7: {
           title: "Портфолио",
@@ -222,7 +259,7 @@
             "https://portfolio.hse.ru/?filter=1_1_N_10_N_2024_N_1_N_N_N",
           codeLink:
             "https://portfolio.hse.ru/?filter=1_1_N_10_N_2024_N_1_N_N_N",
-          screenshot: "../images/portfolio.jpg",
+          screenshot: "../images/portfolio-300.jpg",
         },
       };
 

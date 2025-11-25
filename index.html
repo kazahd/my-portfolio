@@ -32,33 +32,35 @@
       <div class="container">
         <section id="home">
           <div class="hero">
-    <div class="hero-image">
+    <!-- ЗАМЕНИТЬ этот блок -->
+<div class="hero-image">
     <picture>
-    <!-- 1. AVIF источник (самый современный) -->
-    <source type="image/avif" 
-            srcset="./images/profile-150.avif 150w, 
-                    ./images/profile-200.avif 200w, 
-                    ./images/profile-300.avif 300w"
-            sizes="200px">
-    
-    <!-- 2. WebP (оставить как запасной для старых браузеров) -->
-    <source type="image/webp" 
-            srcset="./images/profile-150.webp 150w, 
-                    ./images/profile-200.webp 200w, 
-                    ./images/profile-300.webp 300w"
-            sizes="200px">
-    
-    <!-- 3. JPEG (последний запасной вариант) -->
-    <img class="hero-photo"
-         src="./images/profile-200.jpg" 
-         srcset="./images/profile-150.jpg 150w, 
-                 ./images/profile-200.jpg 200w, 
-                 ./images/profile-300.jpg 300w"
-         sizes="200px"
-         width="200" height="200"
-         alt="Портрет Тихона Семенова"
-         fetchpriority="high">
-</picture>
+        <!-- 1. AVIF источник (самый современный) -->
+        <source type="image/avif" 
+                srcset="./images/profile-150.avif 150w, 
+                        ./images/profile-200.avif 200w, 
+                        ./images/profile-300.avif 300w"
+                sizes="(max-width: 768px) 150px, 200px">
+        
+        <!-- 2. WebP -->
+        <source type="image/webp" 
+                srcset="./images/profile-150.webp 150w, 
+                        ./images/profile-200.webp 200w, 
+                        ./images/profile-300.webp 300w"
+                sizes="(max-width: 768px) 150px, 200px">
+        
+        <!-- 3. JPEG (фолбэк) -->
+        <img class="hero-photo"
+             src="./images/profile-200.jpg" 
+             srcset="./images/profile-150.jpg 150w, 
+                     ./images/profile-200.jpg 200w, 
+                     ./images/profile-300.jpg 300w"
+             sizes="(max-width: 768px) 150px, 200px"
+             width="200" height="200"
+             alt="Портрет Тихона Семенова"
+             loading="eager"
+             decoding="sync">
+    </picture>
 </div>
     <div class="hero-text">
         <h1>Привет! Я студент группы ЭФБО-02-24</h1>
@@ -146,10 +148,10 @@
             </div>
             <div class="project-card">
                 <picture>
-                    <source type="image/webp" srcset="./images/shop.bmp 1x">
+                    <source type="image/webp" srcset="./images/shop.jpg 1x">
                     <img class="project-image"
-                         src="./images/shop.bmp"
-                         srcset="./images/shop.bmp 1x"
+                         src="./images/shop.jpg"
+                         srcset="./images/shop.jpg 1x"
                          sizes="(max-width: 768px) 300px, 600px"
                          width="300" height="200"
                          loading="lazy"
@@ -175,6 +177,7 @@
         </div>
     </div>
 </section>
+
         </section>
       </div>
     </main>
