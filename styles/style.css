@@ -2328,3 +2328,157 @@ h1, h2, h3 {
     color: #ffffff !important;
     font-weight: bold;
 }
+
+/* ===== ИСПРАВЛЕНИЕ КОНТРАСТА ДЛЯ ЗАГОЛОВКОВ ===== */
+
+/* 1. Заголовок имени в хедере - делаем белым и жирным */
+.header-content .logo h2 {
+    color: #ffffff !important; /* Белый на зеленом фоне */
+    font-weight: 700 !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    font-size: 1.6rem;
+}
+
+/* 2. Основные заголовки страниц - делаем почти черными */
+.page-title {
+    color: #1a1a1a !important; /* Почти черный */
+    font-weight: 800 !important;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+/* 3. Заголовки секций - темно-серые */
+.contacts-page h2 {
+    color: #2d2d2d !important; /* Темно-серый */
+    font-weight: 700 !important;
+    border-bottom: 3px solid #0d4010;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* 4. Улучшаем контраст для ВСЕХ заголовков на сайте */
+h1, h2, h3, h4, h5, h6 {
+    color: #1a1a1a !important; /* Почти черный */
+    font-weight: 700 !important;
+}
+
+/* 5. Специфично для заголовка "Свяжитесь со мной" */
+#contact-form-heading {
+    color: #1a1a1a !important;
+    font-weight: 700 !important;
+    font-size: 1.8rem;
+}
+
+/* 6. Специфично для заголовка "Мои контакты" */
+#contact-info-heading {
+    color: #1a1a1a !important;
+    font-weight: 700 !important;
+    font-size: 1.8rem;
+}
+
+/* 7. Улучшаем контраст для заголовков на главной странице */
+.hero-text h1 {
+    color: #1a1a1a !important;
+    font-weight: 800 !important;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.skills-section h2 {
+    color: #1a1a1a !important;
+    font-weight: 700 !important;
+}
+
+.projects-section h2 {
+    color: #1a1a1a !important;
+    font-weight: 700 !important;
+}
+
+/* 8. Улучшаем контраст для заголовков в проектах */
+.projects-header h1 {
+    color: #1a1a1a !important;
+    font-weight: 800 !important;
+}
+
+/* 9. Улучшаем контраст для заголовков в дневнике */
+.diary-container h2 {
+    color: #1a1a1a !important;
+    font-weight: 700 !important;
+}
+
+/* 10. Улучшаем контраст для модальных окон */
+.modal-header h2 {
+    color: #1a1a1a !important;
+    font-weight: 700 !important;
+}
+
+/* 11. Принудительное исправление для всех текстовых элементов */
+body {
+    color: #333333 !important;
+    background-color: #ffffff !important;
+}
+
+/* 12. Улучшаем читаемость обычного текста */
+p, span, li, td {
+    color: #333333 !important;
+    line-height: 1.6;
+}
+
+/* 13. Улучшаем контраст для ссылок */
+a:not(.header-nav a):not(.btn) {
+    color: #0066cc !important; /* Стандартный синий */
+    font-weight: 500;
+}
+
+a:not(.header-nav a):not(.btn):hover {
+    color: #004499 !important;
+    text-decoration: underline;
+}
+
+/* 14. Улучшаем контраст для кнопок в формах */
+.contact-form .btn {
+    background-color: #0d4010 !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    border: 2px solid #0d4010;
+}
+
+.contact-form .btn:hover {
+    background-color: #1b5e20 !important;
+    border-color: #1b5e20;
+}
+
+/* 15. Улучшаем контраст для placeholder'ов */
+.contact-form .form-group input::placeholder,
+.contact-form .form-group textarea::placeholder {
+    color: #666666 !important;
+    font-weight: 500;
+}
+
+/* 16. Улучшаем контраст для лейблов форм */
+.contact-form .form-group label {
+    color: #1a1a1a !important;
+    font-weight: 600 !important;
+}
+
+/* 17. Улучшаем контраст для подсказок */
+.field-hint {
+    color: #555555 !important;
+    font-weight: 500;
+}
+
+/* 18. Улучшаем контраст для ошибок */
+.error-message {
+    color: #8b0000 !important; /* Темно-красный */
+    font-weight: 600;
+    background-color: #ffeaea;
+    border-left: 4px solid #8b0000;
+}
+
+/* 19. Улучшаем контраст для успешных сообщений */
+.success-message {
+    color: #006400 !important; /* Темно-зеленый */
+    font-weight: 600;
+    background-color: #f0fff0;
+    border: 2px solid #006400;
+}
