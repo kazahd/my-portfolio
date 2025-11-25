@@ -2482,3 +2482,43 @@ a:not(.header-nav a):not(.btn):hover {
     background-color: #f0fff0;
     border: 2px solid #006400;
 }
+
+/* ===== СРОЧНОЕ ИСПРАВЛЕНИЕ ДЛЯ ЗАГОЛОВКА ИМЕНИ ===== */
+
+/* 1. Принудительно делаем имя белым в хедере */
+.header-content .logo h2 {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7) !important;
+    font-size: 1.5rem !important;
+}
+
+/* 2. Убедимся что переопределяем все возможные стили */
+header .logo h2 {
+    color: #ffffff !important;
+}
+
+.logo h2 {
+    color: #ffffff !important;
+}
+
+/* 3. Делаем хедер еще темнее для максимального контраста */
+header {
+    background-color: #0a2e0a !important; /* Очень темный зеленый */
+    color: #ffffff !important;
+}
+
+/* 4. Принудительно убираем любые другие цвета */
+* {
+    color: inherit !important;
+}
+
+/* 5. Специфичное правило для логотипа */
+.header-content > .logo > h2 {
+    color: #ffffff !important;
+}
+
+/* 6. Используем максимально специфичный селектор */
+body > header > div > div > div > h2 {
+    color: #ffffff !important;
+}
